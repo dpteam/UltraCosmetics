@@ -10,15 +10,15 @@ import be.isach.ultracosmetics.util.UtilParticles;
 import be.isach.ultracosmetics.v1_16_R2.pathfinders.CustomPathFinderGoalPanic;
 import be.isach.ultracosmetics.version.IEntityUtil;
 import com.mojang.datafixers.util.Pair;
-import net.minecraft.server.v1_16_R2.*;
+import net.minecraft.server.v1_16_R1.*;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.craftbukkit.libs.org.apache.commons.codec.binary.Base64;
-import org.bukkit.craftbukkit.v1_16_R2.CraftWorld;
-import org.bukkit.craftbukkit.v1_16_R2.entity.*;
-import org.bukkit.craftbukkit.v1_16_R2.inventory.CraftInventory;
-import org.bukkit.craftbukkit.v1_16_R2.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_16_R1.CraftWorld;
+import org.bukkit.craftbukkit.v1_16_R1.entity.*;
+import org.bukkit.craftbukkit.v1_16_R1.inventory.CraftInventory;
+import org.bukkit.craftbukkit.v1_16_R1.inventory.CraftItemStack;
 import org.bukkit.entity.Creature;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Wither;
@@ -80,7 +80,7 @@ public class EntityUtil implements IEntityUtil {
             for (Player players : player.getWorld().getPlayers()) {
                 PacketSender.send(players, new PacketPlayOutSpawnEntityLiving(as));
                 PacketSender.send(players, new PacketPlayOutEntityMetadata(as.getId(), as.getDataWatcher(), false));
-                List<Pair<EnumItemSlot, net.minecraft.server.v1_16_R2.ItemStack>> list = new ArrayList<>();
+                List<Pair<EnumItemSlot, net.minecraft.server.v1_16_R1.ItemStack>> list = new ArrayList<>();
                 list.add(new Pair(EnumItemSlot.HEAD, CraftItemStack.asNMSCopy(new org.bukkit.inventory.ItemStack(org.bukkit.Material.PACKED_ICE))));
                 PacketSender.send(players, new PacketPlayOutEntityEquipment(as.getId(), list));
             }

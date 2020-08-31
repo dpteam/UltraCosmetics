@@ -8,14 +8,14 @@ import be.isach.ultracosmetics.util.EntitySpawningManager;
 import be.isach.ultracosmetics.util.MathUtils;
 import be.isach.ultracosmetics.v1_16_R2.customentities.CustomEntityFirework;
 import be.isach.ultracosmetics.v1_16_R2.customentities.CustomGuardian;
-import net.minecraft.server.v1_16_R2.EntityTypes;
-import net.minecraft.server.v1_16_R2.World;
+import net.minecraft.server.v1_16_R1.EntityTypes;
+import net.minecraft.server.v1_16_R1.World;
 import org.bukkit.Bukkit;
 import org.bukkit.Color;
 import org.bukkit.FireworkEffect;
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.v1_16_R2.CraftWorld;
-import org.bukkit.craftbukkit.v1_16_R2.entity.CraftEntity;
+import org.bukkit.craftbukkit.v1_16_R1.CraftWorld;
+import org.bukkit.craftbukkit.v1_16_R1.entity.CraftEntity;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
@@ -36,7 +36,7 @@ public class MorphElderGuardian extends Morph {
     /**
      * List of the custom entities.
      */
-    public static List<net.minecraft.server.v1_16_R2.Entity> customEntities = new ArrayList<>();
+    public static List<net.minecraft.server.v1_16_R1.Entity> customEntities = new ArrayList<>();
 
     private boolean cooldown;
     private CustomGuardian customGuardian;

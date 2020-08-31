@@ -49,7 +49,7 @@ public class SpawnEggs {
                 case (byte) 56:
                     return new ItemStack(Material.GHAST_SPAWN_EGG);
                 case (byte) 57:
-                    return new ItemStack(Material.ZOMBIE_PIGMAN_SPAWN_EGG);
+                    return new ItemStack(Material.ZOMBIE_PIGMAN_SPAWN_EGG); // WORKER: ZOMBIE_PIGMAN_SPAWN_EGG >> ZOMBIFIED_PIGLIN_SPAWN_EGG
                 case (byte) 58:
                     return new ItemStack(Material.ENDERMAN_SPAWN_EGG);
                 case (byte) 59:

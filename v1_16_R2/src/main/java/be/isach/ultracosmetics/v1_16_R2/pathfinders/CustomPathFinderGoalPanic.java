@@ -1,7 +1,7 @@
 package be.isach.ultracosmetics.v1_16_R2.pathfinders;
 
 
-import net.minecraft.server.v1_16_R2.*;
+import net.minecraft.server.v1_16_R1.*;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

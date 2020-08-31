@@ -1,6 +1,6 @@
 package be.isach.ultracosmetics.v1_16_R2.customentities;
 
-import net.minecraft.server.v1_16_R2.PathfinderGoal;
+import net.minecraft.server.v1_16_R1.PathfinderGoal;
 
 import java.util.EnumSet;
 

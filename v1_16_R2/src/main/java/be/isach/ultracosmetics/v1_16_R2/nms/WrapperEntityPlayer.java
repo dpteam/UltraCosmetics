@@ -1,6 +1,6 @@
 package be.isach.ultracosmetics.v1_16_R2.nms;
 
-import net.minecraft.server.v1_16_R2.EntityPlayer;
+import net.minecraft.server.v1_16_R1.EntityPlayer;
 
 /**
  * @author RadBuilder

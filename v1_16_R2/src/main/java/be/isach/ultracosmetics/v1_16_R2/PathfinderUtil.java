@@ -1,8 +1,8 @@
 package be.isach.ultracosmetics.v1_16_R2;
 
 import be.isach.ultracosmetics.version.IPathfinderUtil;
-import net.minecraft.server.v1_16_R2.*;
-import org.bukkit.craftbukkit.v1_16_R2.entity.CraftEntity;
+import net.minecraft.server.v1_16_R1.*;
+import org.bukkit.craftbukkit.v1_16_R1.entity.CraftEntity;
 import org.bukkit.entity.Entity;
 
 import java.lang.reflect.Field;

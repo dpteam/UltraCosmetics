@@ -1,8 +1,8 @@
 package be.isach.ultracosmetics.v1_16_R2.customentities;
 
 import be.isach.ultracosmetics.v1_16_R2.morphs.MorphElderGuardian;
-import net.minecraft.server.v1_16_R2.*;
-import org.bukkit.craftbukkit.v1_16_R2.entity.CraftArmorStand;
+import net.minecraft.server.v1_16_R1.*;
+import org.bukkit.craftbukkit.v1_16_R1.entity.CraftArmorStand;
 import org.bukkit.entity.ArmorStand;
 
 /**

@@ -4,7 +4,7 @@ import be.isach.ultracosmetics.cosmetics.mounts.IMountCustomEntity;
 import be.isach.ultracosmetics.v1_16_R2.EntityBase;
 import be.isach.ultracosmetics.v1_16_R2.nms.WrapperEntityHuman;
 import be.isach.ultracosmetics.v1_16_R2.nms.WrapperEntityInsentient;
-import net.minecraft.server.v1_16_R2.*;
+import net.minecraft.server.v1_16_R1.*;
 
 /**
  * @author iSach

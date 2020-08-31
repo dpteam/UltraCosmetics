@@ -2,7 +2,7 @@ package be.isach.ultracosmetics.v1_16_R2.customentities;
 
 import com.mojang.datafixers.DataFixUtils;
 import com.mojang.datafixers.types.Type;
-import net.minecraft.server.v1_16_R2.*;
+import net.minecraft.server.v1_16_R1.*;
 import org.bukkit.entity.EntityType;
 
 import java.lang.reflect.Field;

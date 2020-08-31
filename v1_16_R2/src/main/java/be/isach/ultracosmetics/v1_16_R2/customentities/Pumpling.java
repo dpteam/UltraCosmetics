@@ -5,7 +5,7 @@ import be.isach.ultracosmetics.cosmetics.pets.IPetCustomEntity;
 import be.isach.ultracosmetics.util.Particles;
 import be.isach.ultracosmetics.util.UtilParticles;
 import be.isach.ultracosmetics.v1_16_R2.pets.CustomEntityPet;
-import net.minecraft.server.v1_16_R2.*;
+import net.minecraft.server.v1_16_R1.*;
 import org.bukkit.entity.Zombie;
 
 /**
