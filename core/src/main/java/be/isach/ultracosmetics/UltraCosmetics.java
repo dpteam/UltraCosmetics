@@ -122,7 +122,7 @@ public class UltraCosmetics extends JavaPlugin {
         getSmartLogger().write("-------------------------------------------------------------------");
         getSmartLogger().write("UltraCosmetics v" + getDescription().getVersion() + " is loading... (server: " + UltraCosmeticsData.get().getServerVersion().getName() + ")");
         getSmartLogger().write("Thanks for downloading it!");
-        getSmartLogger().write("Plugin by iSach. Enhancements by Taylor E. (@tertty).");
+        getSmartLogger().write("Plugin by iSach. Enhancements by Taylor E. (@tertty). v1.16.2 Port by DartPower.");
         getSmartLogger().write("Link: http://bit.ly/UltraCosmetics");
 
         // Set up config.

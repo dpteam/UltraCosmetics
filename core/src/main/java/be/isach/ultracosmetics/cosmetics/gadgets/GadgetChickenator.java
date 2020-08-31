@@ -77,7 +77,7 @@ public class GadgetChickenator extends Gadget {
         final ArrayList<Firework> fireworks = new ArrayList<>();
         for (int i = 0; i < 4; i++) {
             Firework f;
-            if (UltraCosmeticsData.get().getServerVersion().compareTo(ServerVersion.v1_16_R1) >= 0) {
+            if (UltraCosmeticsData.get().getServerVersion().compareTo(ServerVersion.v1_16_R2) >= 0) { // WORKER
                 f = getPlayer().getWorld().spawn(location, Firework.class);
             } else {
                 f = getPlayer().getWorld().spawn(location, Firework.class);

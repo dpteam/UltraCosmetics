@@ -18,6 +18,7 @@ public enum ServerVersion {
     v1_14_R1("1.14.4"),
     v1_15_R1("1.15.2"),
     v1_16_R1("1.16.1");
+    v1_16_R2("1.16.2");
 
     String name;
 

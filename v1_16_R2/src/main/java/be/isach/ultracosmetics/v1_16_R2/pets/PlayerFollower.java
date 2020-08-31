@@ -1,14 +1,14 @@
-package be.isach.ultracosmetics.v1_15_R1.pets;
+package be.isach.ultracosmetics.v1_16_R2.pets;
 
 import be.isach.ultracosmetics.UltraCosmeticsData;
 import be.isach.ultracosmetics.cosmetics.pets.IPlayerFollower;
 import be.isach.ultracosmetics.cosmetics.pets.Pet;
-import net.minecraft.server.v1_15_R1.Entity;
-import net.minecraft.server.v1_15_R1.EntityInsentient;
-import net.minecraft.server.v1_15_R1.PathEntity;
+import net.minecraft.server.v1_16_R2.Entity;
+import net.minecraft.server.v1_16_R2.EntityInsentient;
+import net.minecraft.server.v1_16_R2.PathEntity;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.v1_15_R1.entity.CraftEntity;
+import org.bukkit.craftbukkit.v1_16_R2.entity.CraftEntity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 
@@ -62,7 +62,7 @@ public class PlayerFollower implements Runnable, IPlayerFollower {
             try {
                 int distance = (int) Bukkit.getPlayer(player.getName()).getLocation().distance(petEntity.getBukkitEntity().getLocation());
 
-                if ((distance > 10 && petEntity.valid && player.isOnGround()) || (pet.getType().getEntityType() == EntityType.WITHER) && player.isOnGround()) {
+                if (distance > 10 && petEntity.valid && player.isOnGround()) {
                     petEntity.setLocation(targetLocation.getBlockX(), targetLocation.getBlockY(), targetLocation.getBlockZ(), 0, 0);
                 }
 
@@ -76,10 +76,9 @@ public class PlayerFollower implements Runnable, IPlayerFollower {
                     ((EntityInsentient) petEntity).getNavigation().a(path, speed);
                     ((EntityInsentient) petEntity).getNavigation().a(speed);
                 }
-
             } catch (IllegalArgumentException exception) {
                 petEntity.setLocation(targetLocation.getBlockX(), targetLocation.getBlockY(), targetLocation.getBlockZ(), 0, 0);
-                //exception.printStackTrace(); //re-comment this when done
+                //exception.printStackTrace();
             }
         });
     }
